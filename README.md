@@ -20,7 +20,7 @@ This project implements a pipeline to **detect and re-identify football players*
 ---
 
 ## 🧱 Project Structure
-
+```
 ├── main.py # Final working tracking script
 ├── best.pt # Custom YOLOv8 detection model
 ├── osnet_x1_0_market1501.pth # Pretrained ReID model (TorchReID)
@@ -28,7 +28,7 @@ This project implements a pipeline to **detect and re-identify football players*
 ├── requirements.txt # All dependencies
 ├── README.md # 📄 You’re reading it
 ├── report.md # Optional writeup
-
+```
 
 ---
 
