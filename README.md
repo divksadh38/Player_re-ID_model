@@ -71,6 +71,13 @@ print(torch.cuda.is_available())  # Should print True
 4. 📁 Place the Files in the Repo Folder
 Your Player_re-ID_model/ folder should contain:
 
+5.Download the pre=trained YOLO model:
+
+markdown
+Copy
+Edit
+🔗 Download the detection model (`best.pt`):(https://drive.google.com/file/d/1-5fOSHOSB9UXyP_enOoZNAMScrePVcMD/view)
+
 bash
 Copy
 Edit
