@@ -44,58 +44,54 @@ Create and activate a clean Python 3.9 environment:
 ```bash
 conda create -n player_reid_env python=3.9 -y
 conda activate player_reid_env
-
+```
 
 2. 📦 Install Dependencies
 Install all required packages:
 
-bash
-Copy
-Edit
+```bash
+
 pip install ultralytics opencv-python deep_sort_realtime torch torchvision numpy ffmpeg-python
 pip install torchreid
 💡 If using GPU, install PyTorch with CUDA 12.1:
+```
+```bash
 
-bash
-Copy
-Edit
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
 3. 🚀 Verify GPU is Working
 Run this in Python to confirm CUDA:
-
+```
 python
-Copy
-Edit
+
 import torch
 print(torch.cuda.is_available())  # Should print True
+```
+
 4. 📁 Place the Files in the Repo Folder
 Your Player_re-ID_model/ folder should contain:
 
 5.Download the pre=trained YOLO model:
 
 markdown
-Copy
-Edit
+
 🔗 Download the detection model (`best.pt`):(https://drive.google.com/file/d/1-5fOSHOSB9UXyP_enOoZNAMScrePVcMD/view)
 
 bash
-Copy
-Edit
-Player_re-ID_model/
-├── main.py                          # Your tracking script
-├── best.pt                          # YOLOv8 model trained on soccer data
-├── osnet_x1_0_market1501.pth        # TorchReID model weights
-├── 15sec_input_720p.mp4             # Test video
-├── README.md                        # This file
-└── requirements.txt                 # Optional
+  Player_re-ID_model/
+  ├── main.py                          # Your tracking script
+  ├── best.pt                          # YOLOv8 model trained on soccer data
+  ├── osnet_x1_0_market1501.pth        # TorchReID model weights
+  ├── 15sec_input_720p.mp4             # Test video
+  ├── README.md                        # This file
+  └── requirements.txt                 # Optional
 5. ▶️ Run the Tracker
 From inside your virtual environment:
-
+```
 bash
-Copy
-Edit
+
 python main.py
-Press Q to quit the video preview window.
+```
 
 ✅ Expected Behavior
 YOLOv8 detects players (class 2) in each frame.
