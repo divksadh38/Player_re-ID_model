@@ -1,4 +1,4 @@
-## ⚽ Football Player Re-Identification using YOLOv8 + DeepSORT + TorchReID
+## ⚽ Football Player Re-Identification using YOLOv11 + DeepSORT + TorchReID
 
 ---
 
@@ -6,7 +6,7 @@
 
 This project implements a pipeline to **detect and re-identify football players** in a video using:
 
-- **YOLOv8** for real-time player detection  
+- **YOLOv11** for real-time player detection  
 - **DeepSORT** for multi-object tracking  
 - **TorchReID** (via OSNet) to maintain consistent IDs across frames
 
