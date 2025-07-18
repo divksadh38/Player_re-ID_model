@@ -26,8 +26,7 @@ This project implements a pipeline to **detect and re-identify football players*
 ├── osnet_x1_0_market1501.pth # Pretrained ReID model (TorchReID)
 ├── 15sec_input_720p.mp4 # Input match clip
 ├── requirements.txt # All dependencies
-├── README.md # 📄 You’re reading it
-├── report.md # Optional writeup
+├── README.md #
 ```
 
 ---
