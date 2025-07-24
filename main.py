@@ -49,7 +49,12 @@ while cap.isOpened():
         h = y2 - y1
         boxes_xywh.append([x1, y1, w, h])
         confs.append(conf)
-
+        
+    detections = []
+    indices = cv2.dnn.NMSBoxes(boxes_xywh, confs, CONF_THRESHOLD, 0.7)
+    for i in indices:
+        i = i[0] if isinstance(i, (list, tuple, np.ndarray)) else i
+        detections.append((boxes_xywh[i], confs[i], 'player'))
 
 
     tracks = tracker.update_tracks(detections, frame=frame)
